@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="header__container container">
+          <div class="header__item"> 
+            <div class="location"> 
+              <div class="icon"><svg width="18" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.216.5a8.038 8.038 0 018.01 7.377 8.693 8.693 0 01-1.933 6.217L10.5 19.956a1.937 1.937 0 01-3 0l-4.792-5.862A8.693 8.693 0 01.774 7.877 8.038 8.038 0 018.784.5h.432zM9 4.25a4.75 4.75 0 100 9.5 4.75 4.75 0 000-9.5zm0 1.5a3.25 3.25 0 110 6.5 3.25 3.25 0 010-6.5z" fill="#fff"/></svg></div>
+              <div class="title">Ташкент</div>
+            </div>
+            <div class="help"> <a class="title" href="help.html">Помощь</a></div>
+          </div>
+          <div class="header__item">
+            <div class="language"> 
+              <div class="ru active">Русский</div><span>|</span>
+              <div class="uz">O’zbek</div>
+            </div><a class="Favorites" href="favorites.html">
+              <div class="icon"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.4 5.25c-2.78 0-5.15 2.08-5.15 4.78 0 1.863.872 3.431 2.028 4.73 1.153 1.295 2.64 2.382 3.983 3.292l2.319 1.57a.75.75 0 00.84 0l2.319-1.57c1.344-.91 2.83-1.997 3.982-3.292 1.157-1.299 2.029-2.867 2.029-4.73 0-2.7-2.37-4.78-5.15-4.78-1.434 0-2.695.672-3.6 1.542-.905-.87-2.167-1.542-3.6-1.542z" fill="#fff"/></svg>
+                <div class="count">0</div>
+              </div>
+              <div class="title">Избранное</div></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="header"> 
+      <div class="header__bottom">
+        <div class="header__container container">
+          <div class="header__items"><a class="logo" href="index.html">
+              <h1>Electronic</h1></a>
+            <button class="category"> 
+              <div class="btn"> <span></span></div>
+              <div class="title">Категории</div>
+            </button>
+            <div class="wrapper"> 
+              <div class="search-input">
+                <input type="text" placeholder="Поиск по сайту" id="myInput"/><a class="icon" href=""><img src="assets/img/search.svg" alt=""/></a>
+                <div class="autocom-box">   </div>
+              </div>
+            </div>
+            <div class="item"> 
+              <div class="filter"><img class="filterG" src="assets/img/filter.svg" alt=""/><img class="filterB" src="assets/img/filterB.svg" alt=""/></div>
+              <div class="notification"><img src="assets/img/notification.svg" alt=""/></div>
+              <div class="dropdown">
+                <button class="dropbtns" onclick="myFunction()">Рус
+                  <ul class="dropdown-content" id="myDropdown">
+                    <li>Рус</li>
+                    <li>Uz</li>
+                  </ul>
+                </button>
+              </div>
+              <div class="myProfile dropdowns"> 
+                <div class="dropbtn">
+                  <div class="img"><img src="assets/img/james.jpg" alt=""/></div>
+                  <div class="name title">Профиль</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="categories"> 
+      <div class="container"> 
+        <div class="box"> 
+          <div class="categories__title">Категории</div>
+          <div class="row"> 
+            <div class="col-lg-3 col-md-12">
+              <div class="categories__menu"> 
+                <ul> 
+                  <li class="active" data-id="mebel"><img src="assets/img/mebel1.png" alt=""/>
+                    <div class="title">Мебель</div>
+                  </li>
+                  <li data-id="car"><img src="assets/img/car1.png" alt=""/>
+                    <div class="title">Авто</div>
+                  </li>
+                  <li data-id="sport"><img src="assets/img/sport1.png" alt=""/>
+                    <div class="title">Спорт</div>
+                  </li>
+                  <li data-id="home"><img src="assets/img/home1.png" alt=""/>
+                    <div class="title">Недвижимость</div>
+                  </li>
+                  <li data-id="service"><img src="assets/img/service1.png" alt=""/>
+                    <div class="title">Услуги</div>
+                  </li>
+                  <li data-id="mebel"><img src="assets/img/mebel1.png" alt=""/>
+                    <div class="title">Мебель</div>
+                  </li>
+                  <li data-id="car"><img src="assets/img/car1.png" alt=""/>
+                    <div class="title">Авто</div>
+                  </li>
+                  <li data-id="sport"><img src="assets/img/sport1.png" alt=""/>
+                    <div class="title">Спорт</div>
+                  </li>
+                  <li data-id="home"><img src="assets/img/home1.png" alt=""/>
+                    <div class="title">Недвижимость</div>
+                  </li>
+                  <li data-id="service"><img src="assets/img/service1.png" alt=""/>
+                    <div class="title">Услуги</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+              <div class="boxes mebel isShow"> 
+                <div class="titleM">Мебель </div>
+                <div class="item">
+                  <ul> 
+                    <li><a href="#">Диваны </a></li>
+                    <li><a href="#">Кровати </a></li>
+                    <li><a href="#">Шкафы </a></li>
+                    <li><a href="#">Полки </a></li>
+                    <li><a href="#">Стенки </a></li>
+                    <li><a href="#">Кресла </a></li>
+                    <li><a href="#">Стулья </a></li>
+                    <li><a href="#">Табуретки </a></li>
+                    <li><a href="#">Тумбы </a></li>
+                  </ul>
+                  <ul> 
+                    <li><a href="#">Диваны </a></li>
+                    <li><a href="#">Кровати </a></li>
+                    <li><a href="#">Шкафы </a></li>
+                    <li><a href="#">Полки </a></li>
+                    <li><a href="#">Стенки </a></li>
+                    <li><a href="#">Кресла </a></li>
+                    <li><a href="#">Стулья </a></li>
+                    <li><a href="#">Табуретки </a></li>
+                    <li><a href="#">Тумбы </a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="boxes car">
+                <div class="titleM">Авто </div>
+                <div class="item"> 
+                  <ul> 
+                    <li><a href="#">Диваны </a></li>
+                    <li><a href="#">Кровати </a></li>
+                    <li><a href="#">Шкафы </a></li>
+                    <li><a href="#">Полки </a></li>
+                    <li><a href="#">Стенки </a></li>
+                    <li><a href="#">Кресла </a></li>
+                    <li><a href="#">Стулья </a></li>
+                    <li><a href="#">Табуретки </a></li>
+                    <li><a href="#">Тумбы </a></li>
+                  </ul>
+                  <ul> 
+                    <li><a href="#">Диваны </a></li>
+                    <li><a href="#">Кровати </a></li>
+                    <li><a href="#">Шкафы </a></li>
+                    <li><a href="#">Полки </a></li>
+                    <li><a href="#">Стенки </a></li>
+                    <li><a href="#">Кресла </a></li>
+                    <li><a href="#">Стулья </a></li>
+                    <li><a href="#">Табуретки </a></li>
+                    <li><a href="#">Тумбы </a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="boxes sport">
+                <div class="titleM">Спорт </div>
+                <div class="item">
+                  <ul> 
+                    <li><a href="#">Диваны </a></li>
+                    <li><a href="#">Кровати </a></li>
+                    <li><a href="#">Шкафы </a></li>
+                    <li><a href="#">Полки </a></li>
+                    <li><a href="#">Стенки </a></li>
+                    <li><a href="#">Кресла </a></li>
+                    <li><a href="#">Стулья </a></li>
+                    <li><a href="#">Табуретки </a></li>
+                    <li><a href="#">Тумбы </a></li>
+                  </ul>
+                  <ul> 
+                    <li><a href="#">Диваны </a></li>
+                    <li><a href="#">Кровати </a></li>
+                    <li><a href="#">Шкафы </a></li>
+                    <li><a href="#">Полки </a></li>
+                    <li><a href="#">Стенки </a></li>
+                    <li><a href="#">Кресла </a></li>
+                    <li><a href="#">Стулья </a></li>
+                    <li><a href="#">Табуретки </a></li>
+                    <li><a href="#">Тумбы </a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="boxes home">
+                <div class="titleM">Спорт         </div>
+                <div class="item">
+                  <ul> 
+                    <li><a href="#">Диваны </a></li>
+                    <li><a href="#">Кровати </a></li>
+                    <li><a href="#">Шкафы </a></li>
+                    <li><a href="#">Полки </a></li>
+                    <li><a href="#">Стенки </a></li>
+                    <li><a href="#">Кресла </a></li>
+                    <li><a href="#">Стулья </a></li>
+                    <li><a href="#">Табуретки </a></li>
+                    <li><a href="#">Тумбы </a></li>
+                  </ul>
+                  <ul> 
+                    <li><a href="#">Диваны </a></li>
+                    <li><a href="#">Кровати </a></li>
+                    <li><a href="#">Шкафы </a></li>
+                    <li><a href="#">Полки </a></li>
+                    <li><a href="#">Стенки </a></li>
+                    <li><a href="#">Кресла </a></li>
+                    <li><a href="#">Стулья </a></li>
+                    <li><a href="#">Табуретки </a></li>
+                    <li><a href="#">Тумбы </a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="boxes service">
+                <div class="titleM"> Услуги </div>
+                <div class="item">
+                  <ul> 
+                    <li><a href="#">Диваны </a></li>
+                    <li><a href="#">Кровати </a></li>
+                    <li><a href="#">Шкафы </a></li>
+                    <li><a href="#">Полки </a></li>
+                    <li><a href="#">Стенки </a></li>
+                    <li><a href="#">Кресла </a></li>
+                    <li><a href="#">Стулья </a></li>
+                    <li><a href="#">Табуретки </a></li>
+                    <li><a href="#">Тумбы </a></li>
+                  </ul>
+                  <ul> 
+                    <li><a href="#">Диваны </a></li>
+                    <li><a href="#">Кровати </a></li>
+                    <li><a href="#">Шкафы </a></li>
+                    <li><a href="#">Полки </a></li>
+                    <li><a href="#">Стенки </a></li>
+                    <li><a href="#">Кресла </a></li>
+                    <li><a href="#">Стулья </a></li>
+                    <li><a href="#">Табуретки </a></li>
+                    <li><a href="#">Тумбы </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12"> 
+              <div class="picture"><img src="assets/img/kra.png" alt=""/></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="filtre"> 
+      <div class="container"> 
+        <div class="box"> 
+          <div class="title">Фильтры</div>
+          <button class="exit"> 
+            <div class="span"> </div>
+          </button>
+          <form class="form" action="">
+            <div class="row"> 
+              <div class="col-lg-4">
+                <select name="">
+                  <option value="">Категории  </option>
+                  <option value="">Категории  </option>
+                  <option value="">Категории </option>
+                </select>
+                <div class="img"><img src="assets/img/dawn.svg" alt=""/></div>
+              </div>
+              <div class="col-lg-4">
+                <select name="">
+                  <option value="">Категории  </option>
+                  <option value="">Категории  </option>
+                  <option value="">Категории </option>
+                </select>
+                <div class="img"><img src="assets/img/dawn.svg" alt=""/></div>
+              </div>
+              <div class="col-lg-4">
+                <select name="">
+                  <option value="">Категории  </option>
+                  <option value="">Категории  </option>
+                  <option value="">Категории </option>
+                </select>
+                <div class="img"><img src="assets/img/dawn.svg" alt=""/></div>
+              </div>
+              <div class="col-lg-4">
+                <select name="">
+                  <option value="">Категории  </option>
+                  <option value="">Категории  </option>
+                  <option value="">Категории </option>
+                </select>
+                <div class="img"><img src="assets/img/dawn.svg" alt=""/></div>
+              </div>
+              <div class="col-lg-4">
+                <select name="">
+                  <option value="">Категории  </option>
+                  <option value="">Категории  </option>
+                  <option value="">Категории </option>
+                </select>
+                <div class="img"><img src="assets/img/dawn.svg" alt=""/></div>
+              </div>
+              <div class="col-lg-4">
+                <select name="">
+                  <option value="">Категории  </option>
+                  <option value="">Категории  </option>
+                  <option value="">Категории</option>
+                </select>
+                <div class="img"><img src="assets/img/dawn.svg" alt=""/></div>
+              </div>
+              <div class="col-lg-4">
+                <div class="filtre__state">
+                  <div class="state__title link stateS1" data-id="stateS1"> 
+                    <div class="titleS">Состояние</div>
+                    <div class="img stateS1"><img src="assets/img/up.svg" alt=""/></div>
+                    <div class="img active stateS1"><img src="assets/img/dawn.svg" alt=""/></div>
+                  </div>
+                  <div class="filtre__state__item stateS1"> 
+                    <input type="checkbox" name="" id="new4"/>
+                    <label for="new4">Новое</label>
+                    <input type="checkbox" name="" id="old4"/>
+                    <label for="old4">Б/У  </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="filtre__state">
+                  <div class="state__title stateS link" data-id="stateS">
+                    <div class="titleS">Цена</div>
+                    <div class="img stateS"><img src="assets/img/up.svg" alt=""/></div>
+                    <div class="img active stateS"><img src="assets/img/dawn.svg" alt=""/></div>
+                  </div>
+                  <div class="filtre__state__item stateS">
+                    <input type="text" placeholder="От"/>
+                    <input type="text" placeholder="До"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn" type="submit">Применить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="searchLocation"> 
+      <div class="searchLocation__item">
+        <div class="searchLocation__box"> 
+          <div class="title">Выбор города</div>
+          <form class="form" action="">
+            <div class="img"><img src="assets/img/select.svg" alt=""/></div>
+            <select name="">
+              <option value="">Ташкент</option>
+              <option value="">Ташкент</option>
+              <option value="">Ташкент</option>
+            </select>
+          </form>
+        </div>
+        <div class="searchLocation__map"> 
+          <div class="img"><img src="assets/img/map.jpg" alt=""/></div>
+          <button class="locat"><img src="assets/img/loc.svg" alt=""/></button>
+          <button class="plus">+</button>
+          <button class="minus">-</button>
+        </div>
+        <button class="btn">Выбрать </button>
+        <button class="exit">
+          <div class="span"></div>
+        </button>
+      </div>
+    </div>
+    <div class="sliderCategory">
+      <div class="slider__container">
+        <div class="titles">Категории</div>
+        <div class="slider__row">
+          <div class="splide sliderCategory">
+            <div class="splide__track sliderCategory__track">
+              <div class="splide__list sliderCategory__list">
+                <div class="splide__slide sliderCategory__slide"><a class="sliderCategory__item" href="#"> 
+                    <div class="img"><img src="assets/img/mebe.png" alt=""/></div>
+                    <div class="title">Мебель</div></a></div>
+                <div class="splide__slide sliderCategory__slide"><a class="sliderCategory__item" href="#"> 
+                    <div class="img"><img src="assets/img/dress1.png" alt=""/></div>
+                    <div class="title">Одежда </div></a></div>
+                <div class="splide__slide sliderCategory__slide"><a class="sliderCategory__item" href="#">
+                    <div class="img"><img src="assets/img/car.png" alt=""/></div>
+                    <div class="title">Авто</div></a></div>
+                <div class="splide__slide sliderCategory__slide"><a class="sliderCategory__item" href="#">
+                    <div class="img"><img src="assets/img/sport.png" alt=""/></div>
+                    <div class="title">Спорт</div></a></div>
+                <div class="splide__slide sliderCategory__slide"><a class="sliderCategory__item" href="#">
+                    <div class="img"><img src="assets/img/home.png" alt=""/></div>
+                    <div class="title">Недвижимость </div></a></div>
+                <div class="splide__slide sliderCategory__slide"><a class="sliderCategory__item" href="#">
+                    <div class="img"><img src="assets/img/service.png" alt=""/></div>
+                    <div class="title">Услуги</div></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sliderBanner">
+      <div class="sliderBanner__container">
+        <div class="splide sliderBanner">
+          <div class="splide__track sliderBanner__track">
+            <div class="splide__list sliderBanner__list">
+              <div class="splide__slide sliderBanner__slide">
+                <div class="img" style="background-image:url(assets/img/acki1.jpg)"> </div>
+              </div>
+              <div class="splide__slide sliderBanner__slide">
+                <div class="img" style="background-image:url(assets/img/acki1.jpg)"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sliderProduct">
+      <div class="slider__container">
+        <div class="titles">Топ объявления дня</div>
+        <div class="slider__row">
+          <div class="splide sliderProduct">
+            <div class="splide__track sliderProduct__track">
+              <div class="splide__list sliderProduct__list">
+                <div class="splide__slide sliderProduct__slide">
+                  <div class="col col-lg-12 ">
+                    <div class="card"> 
+                      <div class="hot">hot</div>
+                      <div class="img" style="background-image:url(assets/img/car.jpg)">
+                        <div class="iconHeart"><img src="assets/img/love.png" alt=""/></div>
+                      </div>
+                      <div class="card__item"> 
+                        <div class="title">Наушники</div>
+                      </div>
+                      <div class="oldPrice">3 200 000 сум</div>
+                      <div class="newPrice">2 600 000 сум</div>
+                      <div class="info">Миксер для молочных коктейлей</div><a href="productsPage.html">
+                        <button class="btnBuy"> Харид қилиш</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="splide__slide sliderProduct__slide">
+                  <div class="col col-lg-12">
+                    <div class="card"> 
+                      <div class="hot">hot</div>
+                      <div class="img" style="background-image:url(assets/img/naushnik.jpg)">
+                        <div class="iconHeart"><img src="assets/img/love.png" alt=""/></div>
+                      </div>
+                      <div class="card__item"> 
+                        <div class="title">Наушники</div>
+                      </div>
+                      <div class="oldPrice">3 200 000 сум</div>
+                      <div class="newPrice">2 600 000 сум</div>
+                      <div class="info">Миксер для молочных коктейлей</div><a href="productsPage.html">
+                        <button class="btnBuy"> Харид қилиш</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="splide__slide sliderProduct__slide">
+                  <div class="col col-lg-12">
+                    <div class="card"> 
+                      <div class="hot">hot</div>
+                      <div class="img" style="background-image:url(assets/img/car.jpg)">
+                        <div class="iconHeart"><img src="assets/img/love.png" alt=""/></div>
+                      </div>
+                      <div class="card__item"> 
+                        <div class="title">Наушники</div>
+                      </div>
+                      <div class="oldPrice">3 200 000 сум</div>
+                      <div class="newPrice">2 600 000 сум</div>
+                      <div class="info">Миксер для молочных коктейлей</div><a href="productsPage.html">
+                        <button class="btnBuy"> Харид қилиш</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="splide__slide sliderProduct__slide">
+                  <div class="col col-lg-12">
+                    <div class="card"> 
+                      <div class="hot">hot</div>
+                      <div class="img" style="background-image:url(assets/img/home.jpg)">
+                        <div class="iconHeart"><img src="assets/img/love.png" alt=""/></div>
+                      </div>
+                      <div class="card__item"> 
+                        <div class="title">Наушники</div>
+                      </div>
+                      <div class="oldPrice">3 200 000 сум</div>
+                      <div class="newPrice">2 600 000 сум</div>
+                      <div class="info">Миксер для молочных коктейлей</div><a href="productsPage.html">
+                        <button class="btnBuy"> Харид қилиш</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="splide__slide sliderProduct__slide">
+                  <div class="col col-lg-12">
+                    <div class="card"> 
+                      <div class="hot">hot</div>
+                      <div class="img" style="background-image:url(assets/img/car.jpg)">
+                        <div class="iconHeart"><img src="assets/img/love.png" alt=""/></div>
+                      </div>
+                      <div class="card__item"> 
+                        <div class="title">Наушники</div>
+                      </div>
+                      <div class="oldPrice">3 200 000 сум</div>
+                      <div class="newPrice">2 600 000 сум</div>
+                      <div class="info">Миксер для молочных коктейлей</div><a href="productsPage.html">
+                        <button class="btnBuy"> Харид қилиш</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="splide__slide sliderProduct__slide">
+                  <div class="col col-lg-12">
+                    <div class="card"> 
+                      <div class="hot">hot</div>
+                      <div class="img" style="background-image:url(assets/img/car.jpg)">
+                        <div class="iconHeart"><img src="assets/img/love.png" alt=""/></div>
+                      </div>
+                      <div class="card__item"> 
+                        <div class="title">Наушники</div>
+                      </div>
+                      <div class="oldPrice">3 200 000 сум</div>
+                      <div class="newPrice">2 600 000 сум</div>
+                      <div class="info">Миксер для молочных коктейлей</div><a href="productsPage.html">
+                        <button class="btnBuy"> Харид қилиш</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="announcements">
+      <div class="container"> 
+        <div class="titles">Все объявления</div>
+        <div class="row"> 
+          <div class="col col-lg-3 col-ld-4 col-md-6 col-mx-6">
+            <div class="card"> 
+              <div class="hot">hot</div>
+              <div class="img" style="background-image:url(assets/img/car.jpg)">
+                <div class="iconHeart"><img src="assets/img/love.png" alt=""/></div>
+              </div>
+              <div class="card__item"> 
+                <div class="title">Наушники</div>
+              </div>
+              <div class="oldPrice">3 200 000 сум</div>
+              <div class="newPrice">2 600 000 сум</div>
+              <div class="info">Миксер для молочных коктейлей</div><a href="productsPage.html">
+                <button class="btnBuy"> Харид қилиш</button></a>
+            </div>
+          </div>
+          <div class="col col-lg-3 col-ld-4 col-md-6 col-mx-6">
+            <div class="card"> 
+              <div class="hot">hot</div>
+              <div class="img" style="background-image:url(assets/img/naushnik.jpg)">
+                <div class="iconHeart"><img src="assets/img/love.png" alt=""/></div>
+              </div>
+              <div class="card__item"> 
+                <div class="title">Наушники</div>
+              </div>
+              <div class="oldPrice">3 200 000 сум</div>
+              <div class="newPrice">2 600 000 сум</div>
+              <div class="info">Миксер для молочных коктейлей</div><a href="productsPage.html">
+                <button class="btnBuy"> Харид қилиш</button></a>
+            </div>
+          </div>
+          <div class="col col-lg-3 col-ld-4 col-md-6 col-mx-6">
+            <div class="card"> 
+              <div class="hot">hot</div>
+              <div class="img" style="background-image:url(assets/img/car.jpg)">
+                <div class="iconHeart"><img src="assets/img/love.png" alt=""/></div>
+              </div>
+              <div class="card__item"> 
+                <div class="title">Наушники</div>
+              </div>
+              <div class="oldPrice">3 200 000 сум</div>
+              <div class="newPrice">2 600 000 сум</div>
+              <div class="info">Миксер для молочных коктейлей</div><a href="productsPage.html">
+                <button class="btnBuy"> Харид қилиш</button></a>
+            </div>
+          </div>
+          <div class="col col-lg-3 col-ld-4 col-md-6 col-mx-6">
+            <div class="card"> 
+              <div class="hot">hot</div>
+              <div class="img" style="background-image:url(assets/img/home.jpg)">
+                <div class="iconHeart"><img src="assets/img/love.png" alt=""/></div>
+              </div>
+              <div class="card__item"> 
+                <div class="title">Наушники</div>
+              </div>
+              <div class="oldPrice">3 200 000 сум</div>
+              <div class="newPrice">2 600 000 сум</div>
+              <div class="info">Миксер для молочных коктейлей</div><a href="productsPage.html">
+                <button class="btnBuy"> Харид қилиш</button></a>
+            </div>
+          </div>
+          <div class="col col-lg-3 col-ld-4 col-md-6 col-mx-6">
+            <div class="card"> 
+              <div class="hot">hot</div>
+              <div class="img" style="background-image:url(assets/img/car.jpg)">
+                <div class="iconHeart"><img src="assets/img/love.png" alt=""/></div>
+              </div>
+              <div class="card__item"> 
+                <div class="title">Наушники</div>
+              </div>
+              <div class="oldPrice">3 200 000 сум</div>
+              <div class="newPrice">2 600 000 сум</div>
+              <div class="info">Миксер для молочных коктейлей</div><a href="productsPage.html">
+                <button class="btnBuy"> Харид қилиш</button></a>
+            </div>
+          </div>
+          <div class="col col-lg-3 col-ld-4 col-md-6 col-mx-6">
+            <div class="card"> 
+              <div class="hot">hot</div>
+              <div class="img" style="background-image:url(assets/img/naushnik.jpg)">
+                <div class="iconHeart"><img src="assets/img/love.png" alt=""/></div>
+              </div>
+              <div class="card__item"> 
+                <div class="title">Наушники</div>
+              </div>
+              <div class="oldPrice">3 200 000 сум</div>
+              <div class="newPrice">2 600 000 сум</div>
+              <div class="info">Миксер для молочных коктейлей</div><a href="productsPage.html">
+                <button class="btnBuy"> Харид қилиш</button></a>
+            </div>
+          </div>
+          <div class="col col-lg-3 col-ld-4 col-md-6 col-mx-6">
+            <div class="card"> 
+              <div class="hot">hot</div>
+              <div class="img" style="background-image:url(assets/img/car.jpg)">
+                <div class="iconHeart"><img src="assets/img/love.png" alt=""/></div>
+              </div>
+              <div class="card__item"> 
+                <div class="title">Наушники</div>
+              </div>
+              <div class="oldPrice">3 200 000 сум</div>
+              <div class="newPrice">2 600 000 сум</div>
+              <div class="info">Миксер для молочных коктейлей</div><a href="productsPage.html">
+                <button class="btnBuy"> Харид қилиш</button></a>
+            </div>
+          </div>
+          <div class="col col-lg-3 col-ld-4 col-md-6 col-mx-6">
+            <div class="card"> 
+              <div class="hot">hot</div>
+              <div class="img" style="background-image:url(assets/img/home.jpg)">
+                <div class="iconHeart"><img src="assets/img/love.png" alt=""/></div>
+              </div>
+              <div class="card__item"> 
+                <div class="title">Наушники</div>
+              </div>
+              <div class="oldPrice">3 200 000 сум</div>
+              <div class="newPrice">2 600 000 сум</div>
+              <div class="info">Миксер для молочных коктейлей</div><a href="productsPage.html">
+                <button class="btnBuy"> Харид қилиш</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="announcements">
+      <div class="container"> 
+        <div class="titles">Все объявления</div>
+        <div class="row"> 
+          <div class="col col-lg-3 col-ld-4 col-md-6 col-mx-6">
+            <div class="card"> 
+              <div class="hot">hot</div>
+              <div class="img" style="background-image:url(assets/img/car.jpg)">
+                <div class="iconHeart"><img src="assets/img/love.png" alt=""/></div>
+              </div>
+              <div class="card__item"> 
+                <div class="title">Наушники</div>
+              </div>
+              <div class="oldPrice">3 200 000 сум</div>
+              <div class="newPrice">2 600 000 сум</div>
+              <div class="info">Миксер для молочных коктейлей</div><a href="productsPage.html">
+                <button class="btnBuy"> Харид қилиш</button></a>
+            </div>
+          </div>
+          <div class="col col-lg-3 col-ld-4 col-md-6 col-mx-6">
+            <div class="card"> 
+              <div class="hot">hot</div>
+              <div class="img" style="background-image:url(assets/img/naushnik.jpg)">
+                <div class="iconHeart"><img src="assets/img/love.png" alt=""/></div>
+              </div>
+              <div class="card__item"> 
+                <div class="title">Наушники</div>
+              </div>
+              <div class="oldPrice">3 200 000 сум</div>
+              <div class="newPrice">2 600 000 сум</div>
+              <div class="info">Миксер для молочных коктейлей</div><a href="productsPage.html">
+                <button class="btnBuy"> Харид қилиш</button></a>
+            </div>
+          </div>
+          <div class="col col-lg-3 col-ld-4 col-md-6 col-mx-6">
+            <div class="card"> 
+              <div class="hot">hot</div>
+              <div class="img" style="background-image:url(assets/img/car.jpg)">
+                <div class="iconHeart"><img src="assets/img/love.png" alt=""/></div>
+              </div>
+              <div class="card__item"> 
+                <div class="title">Наушники</div>
+              </div>
+              <div class="oldPrice">3 200 000 сум</div>
+              <div class="newPrice">2 600 000 сум</div>
+              <div class="info">Миксер для молочных коктейлей</div><a href="productsPage.html">
+                <button class="btnBuy"> Харид қилиш</button></a>
+            </div>
+          </div>
+          <div class="col col-lg-3 col-ld-4 col-md-6 col-mx-6">
+            <div class="card"> 
+              <div class="hot">hot</div>
+              <div class="img" style="background-image:url(assets/img/home.jpg)">
+                <div class="iconHeart"><img src="assets/img/love.png" alt=""/></div>
+              </div>
+              <div class="card__item"> 
+                <div class="title">Наушники</div>
+              </div>
+              <div class="oldPrice">3 200 000 сум</div>
+              <div class="newPrice">2 600 000 сум</div>
+              <div class="info">Миксер для молочных коктейлей</div><a href="productsPage.html">
+                <button class="btnBuy"> Харид қилиш</button></a>
+            </div>
+          </div>
+          <div class="col col-lg-3 col-ld-4 col-md-6 col-mx-6">
+            <div class="card"> 
+              <div class="hot">hot</div>
+              <div class="img" style="background-image:url(assets/img/car.jpg)">
+                <div class="iconHeart"><img src="assets/img/love.png" alt=""/></div>
+              </div>
+              <div class="card__item"> 
+                <div class="title">Наушники</div>
+              </div>
+              <div class="oldPrice">3 200 000 сум</div>
+              <div class="newPrice">2 600 000 сум</div>
+              <div class="info">Миксер для молочных коктейлей</div><a href="productsPage.html">
+                <button class="btnBuy"> Харид қилиш</button></a>
+            </div>
+          </div>
+          <div class="col col-lg-3 col-ld-4 col-md-6 col-mx-6">
+            <div class="card"> 
+              <div class="hot">hot</div>
+              <div class="img" style="background-image:url(assets/img/naushnik.jpg)">
+                <div class="iconHeart"><img src="assets/img/love.png" alt=""/></div>
+              </div>
+              <div class="card__item"> 
+                <div class="title">Наушники</div>
+              </div>
+              <div class="oldPrice">3 200 000 сум</div>
+              <div class="newPrice">2 600 000 сум</div>
+              <div class="info">Миксер для молочных коктейлей</div><a href="productsPage.html">
+                <button class="btnBuy"> Харид қилиш</button></a>
+            </div>
+          </div>
+          <div class="col col-lg-3 col-ld-4 col-md-6 col-mx-6">
+            <div class="card"> 
+              <div class="hot">hot</div>
+              <div class="img" style="background-image:url(assets/img/car.jpg)">
+                <div class="iconHeart"><img src="assets/img/love.png" alt=""/></div>
+              </div>
+              <div class="card__item"> 
+                <div class="title">Наушники</div>
+              </div>
+              <div class="oldPrice">3 200 000 сум</div>
+              <div class="newPrice">2 600 000 сум</div>
+              <div class="info">Миксер для молочных коктейлей</div><a href="productsPage.html">
+                <button class="btnBuy"> Харид қилиш</button></a>
+            </div>
+          </div>
+          <div class="col col-lg-3 col-ld-4 col-md-6 col-mx-6">
+            <div class="card"> 
+              <div class="hot">hot</div>
+              <div class="img" style="background-image:url(assets/img/home.jpg)">
+                <div class="iconHeart"><img src="assets/img/love.png" alt=""/></div>
+              </div>
+              <div class="card__item"> 
+                <div class="title">Наушники</div>
+              </div>
+              <div class="oldPrice">3 200 000 сум</div>
+              <div class="newPrice">2 600 000 сум</div>
+              <div class="info">Миксер для молочных коктейлей</div><a href="productsPage.html">
+                <button class="btnBuy"> Харид қилиш</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="signIn">
+      <div class="signIn__box">
+        <div class="logo"><img src="assets/img/logoH.png" alt=""/></div>
+        <div class="signIn__item">
+          <div class="sign-in active link" data-id="sign-In">Вход</div>
+          <div class="register link" data-id="registrations">Регистрация</div>
+          <div class="register2 link" data-id="registrations2">Регистрация</div>
+        </div>
+        <div class="signIn__items sign-In informations isShow">
+          <form class="form" action="">
+            <input class="input" type="text" placeholder="Номер телефона или Email адрес" id="login"/>
+            <div class="items">
+              <input class="input" type="password" placeholder="Пароль" id="logInParol"/>
+              <div class="label" onclick="logInToggle()"><img src="assets/img/eye.svg" alt=""/></div>
+            </div>
+            <input type="checkbox" id="remember"/>
+            <label for="remember">Запомнить меня</label>
+          </form>
+          <button class="btn2" type="submit" disabled="disabled">Войти</button>
+        </div>
+        <div class="exit"><img src="assets/img/exit.svg" alt=""/></div>
+        <div class="registration__item registrations informations"> 
+          <form class="form" action=""> 
+            <input type="text" placeholder="Номер телефона или Email адрес"/>
+            <input type="checkbox" id="rem"/>
+            <label for="rem">Я принимаю условия  <span>Пользовательского соглашения</span></label>
+          </form>
+          <button class="btn link" type="submit" data-id="register2" disabled="disabled">Продолжить</button>
+        </div>
+        <div class="registration__item2 register2">
+          <form class="form lab" action="">
+            <label for="number">Мы выслали код на номер +99890 924 00 00</label>
+            <input type="text" placeholder="Введите полученный код" id="number"/>
+            <div class="time">Запросить код повторно можно будет через <span>00:24</span></div>
+            <div class="picturePassword"> 
+              <input type="text" name="" placeholder="Введите код с картинки"/>
+              <div class="img"><img src="assets/img/parol.png" alt=""/></div>
+              <div class="img"><img src="assets/img/around.svg" alt=""/></div>
+            </div>
+            <input type="checkbox" id="rem1"/>
+            <label for="rem1">Я принимаю условия  <span>Пользовательского соглашения</span></label>
+            <button class="btn3" type="submit" disabled="disabled">Продолжить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row"> 
+          <div class="col-lg-3 col-md-6 col-mx-12"> 
+            <div class="footer__item"> <a class="logo" href="index.html">
+                <h1>Electronic</h1></a>
+              <div class="social"> 
+                <div class="title">Мы в соцсетях:</div>
+                <div class="social__item"> <a class="img" href="#"><img src="assets/img/twitter.svg" alt=""/></a><a class="img" href="#"><img src="assets/img/instagram2.svg" alt=""/></a><a class="img" href="#"><img src="assets/img/facebook.svg" alt=""/></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-mx-12"> 
+            <div class="footer__menu">
+              <div class="title">Навигация по сайту </div>
+              <ul> 
+                <li><a href="#">Категории </a></li>
+                <li><a href="#">Реклама</a></li>
+                <li><a href="#">Обратная связь</a></li>
+                <li><a href="#">Вакансии</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-mx-12"> 
+            <div class="footer__menu">
+              <div class="title">Рубрики</div>
+              <ul> 
+                <li><a href="#">Публичная оферта </a></li>
+                <li><a href="#">Личный кабинет</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Мобильное приложение</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-mx-12">
+            <div class="footer__img">
+              <div class="img"><img src="assets/img/phone.png" alt=""/></div>
+              <div class="App"> <a class="appStore" href="#"><img src="assets/img/appStore.png" alt=""/></a><a class="googlePlay" href="#"><img src="assets/img/googlePlay.png" alt=""/></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="navBar"> 
+      <ul> 
+        <li><a href="index.html">
+            <div class="img"><img src="assets/img/home.svg" alt=""/></div>
+            <div class="title active"> Главная</div></a></li>
+        <li><a href="profilePage.html">
+            <div class="img"><img src="assets/img/chat.svg" alt=""/></div>
+            <div class="title">Чаты</div></a></li>
+        <li><a href="newAdd.html">
+            <div class="img"><img src="assets/img/plus.svg" alt=""/></div>
+            <div class="title">Объявление</div></a></li>
+        <li><a href="favorites.html">
+            <div class="img"><img src="assets/img/heartN.svg" alt=""/></div>
+            <div class="title">Избранное</div></a></li>
+        <li><a href="registrations.html">
+            <div class="img"><img src="assets/img/user.svg" alt=""/></div>
+            <div class="title">Профиль</div></a></li>
+      </ul>
+    </div>
+    <script src="assets/js/splide.min.js"></script>
+    <script src="assets/js/list.js"></script>
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
